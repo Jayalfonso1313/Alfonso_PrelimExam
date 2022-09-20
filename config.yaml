@@ -26,19 +26,11 @@
     ansible.builtin.user:
       name: jayalfonso
       state: present
-      shell: /bin/bash
-      system: no
-      createhome: yes
-      home: /home/jayalfonso
     when: ansible_distribution == "Ubuntu"
  
   - name: Creating user for CentOS
     ansible.builtin.user:
       name: jayalfonso
       state: present
-      shell: /bin/bash
-      system: no
-      createhome: yes
-      home: /home/jayalfonso
     when: ansible_distribution == "CentOS"
 
